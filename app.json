@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Expo Firebase Auth",
+    "slug": "expo-firebase-auth",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "facebookScheme": "fb684399708713036",
+    "facebookAppId": "684399708713036",
+    "facebookDisplayName": "Expo-firebase-auth",
+    "ios": {
+      "bundleIdentifier": "host.exp.exponent",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.410570208593-sraurr3id0a7vj8b13h0lpqim4rl8mr3"
+        }
+      }
+    },
+    "android": {
+      "package": "host.exp.exponent"
+    }
+  }
+}
