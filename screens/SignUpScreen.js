@@ -18,6 +18,22 @@ import * as Facebook from 'expo-facebook'
 import * as Google from 'expo-google-app-auth';
 import * as Segment from 'expo-analytics-segment';
 export const isAndroid = () => Platform.OS === 'android';
+import {
+  FACEBOOK_APP_ID,
+  ANDROID_CLIENT_ID,
+  IOS_CLIENT_ID
+} from 'react-native-dotenv'
+
+const facebookAppId = {
+  FACEBOOK_APP_ID
+}
+const androidClientId = {
+  ANDROID_CLIENT_ID,
+
+}
+const IOSClientId = {
+  IOS_CLIENT_ID
+}
 
 
 
@@ -64,7 +80,7 @@ class SignUpScreen extends React.Component {
   }
   async signInWithFacebook() {
     try {
-      const { type, token } = await Facebook.logInWithReadPermissionsAsync('1065769230450524', {
+      const { type, token } = await Facebook.logInWithReadPermissionsAsync(facebookAppId, {
         permissions: ['public_profile'],
       });
       if (type === 'success') {
@@ -138,8 +154,8 @@ class SignUpScreen extends React.Component {
   signInWithGoogleAsync = async () => {
     try {
       const result = await Google.logInAsync({
-        androidClientId: "410570208593-e9nm795n8fh155duf9aif05gmqepi4p6.apps.googleusercontent.com",
-        iosClientId: "410570208593-9iub0l47lr7a3bdashh8na5hd2a7q1sq.apps.googleusercontent.com",
+        androidClientId: androidClientId,
+        iosClientId: IOSClientId,
         behavior: 'web',
         iosClientId: '', //enter ios client id
         scopes: ['profile', 'email']

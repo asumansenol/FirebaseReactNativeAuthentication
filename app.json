@@ -23,16 +23,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "facebookScheme": "fb684399708713036",
-    "facebookAppId": "684399708713036",
     "facebookDisplayName": "Expo-firebase-auth",
     "ios": {
-      "bundleIdentifier": "host.exp.exponent",
-      "config": {
-        "googleSignIn": {
-          "reservedClientId": "com.googleusercontent.apps.410570208593-sraurr3id0a7vj8b13h0lpqim4rl8mr3"
-        }
-      }
+      "bundleIdentifier": "host.exp.exponent"
     },
     "android": {
       "package": "host.exp.exponent"

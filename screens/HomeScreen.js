@@ -3,16 +3,6 @@ import { StyleSheet, Text, View, SafeAreaView, Button } from 'react-native';
 import firebase from 'firebase';
 
 
-
-/*setUpSegment = async () => {
-    await analytics.setup('', {
-      // Record screen views automatically!
-      recordScreenViews: true,
-      // Record certain application events automatically!
-      trackAppLifecycleEvents: true
-    });
-  }*/
-
 class HomeScreen extends React.Component {
   state = { user: {} };
   componentDidMount() {
