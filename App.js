@@ -5,12 +5,14 @@ import AuthNavigator from './navigation/AuthNavigator';
 import HomeScreen from './screens/HomeScreen.js';
 import firebase from 'firebase'
 import {
-    API_KEY,
-    AUTH_DOMAIN,
-    DATABASE_URL,
-    PROJECT_ID,
-    MESSAGE_SENDER_ID,
-    APP_ID
+  API_KEY,
+  AUTH_DOMAIN,
+  DATABASE_URL,
+  PROJECT_ID,
+  STORAGE_BUCKET,
+  MESSAGE_SENDER_ID,
+  APP_ID,
+  MEASUREMENT_ID
 } from 'react-native-dotenv'
 
 const firebaseConfig = {
@@ -18,9 +20,10 @@ const firebaseConfig = {
     authDomain: AUTH_DOMAIN,
     databaseURL: DATABASE_URL,
     projectId: PROJECT_ID,
-    storageBucket: '',
+    storageBucket: STORAGE_BUCKET,
     messagingSenderId: MESSAGE_SENDER_ID,
-    appId: APP_ID
+    appId: APP_ID,
+    measurementId:MEASUREMENT_ID
 }
 
 
